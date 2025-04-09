@@ -27,3 +27,18 @@ class Solution {
             
         }
     };
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    Solution sol;
+
+    cout << sol.romanToInt("III") << endl;    // 3
+    cout << sol.romanToInt("IV") << endl;     // 4
+    cout << sol.romanToInt("IX") << endl;     // 9
+    cout << sol.romanToInt("LVIII") << endl;  // 58
+    cout << sol.romanToInt("MCMXCIV") << endl; // 1994
+
+    return 0;
+}
