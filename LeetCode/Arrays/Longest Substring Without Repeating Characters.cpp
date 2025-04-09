@@ -21,3 +21,18 @@ class Solution {
             
         }
 };
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    Solution sol;
+
+    cout << sol.lengthOfLongestSubstring("abcabcbb") << endl; // Expected: 3 ("abc")
+    cout << sol.lengthOfLongestSubstring("bbbbb") << endl;    // Expected: 1 ("b")
+    cout << sol.lengthOfLongestSubstring("pwwkew") << endl;   // Expected: 3 ("wke")
+    cout << sol.lengthOfLongestSubstring("") << endl;         // Expected: 0
+    cout << sol.lengthOfLongestSubstring("dvdf") << endl;     // Expected: 3 ("vdf")
+
+    return 0;
+}
