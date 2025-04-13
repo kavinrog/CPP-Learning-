@@ -1,3 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    Solution solution;
+    vector<int> nums = {0, 1, 0, 3, 12};
+    
+    cout << "Before moving zeros: ";
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    solution.moveZeroes(nums);
+
+    cout << "After moving zeros: ";
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
 class Solution {
     public:
         void moveZeroes(vector<int>& nums) {
