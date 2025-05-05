@@ -15,4 +15,5 @@ class Solution {
             for(auto& [col, nodes] : colTable){
                 result.pushback(nodes);
             }
+            return result;
         }};
