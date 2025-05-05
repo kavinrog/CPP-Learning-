@@ -26,3 +26,15 @@ auto kSmallestNumbers(vector<int>& nums, int k , bool required_list = true){
     }
 }
 
+int main() {
+    vector<int> nums = {3, 2, 1, 5, 6, 4};
+    int k = 2;
+    cout << "The " << k << "th smallest number is: " << kSmallestNumbers(nums, k , false) << endl;
+    cout << "The " << k << " smallest numbers are: ";
+    vector<int> result = kSmallestNumbers(nums, k);
+    for (int num : result) {
+        cout << num << " ";
+    }
+    cout << endl;
+    return 0;
+}
